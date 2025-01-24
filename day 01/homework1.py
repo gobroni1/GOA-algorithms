@@ -18,3 +18,4 @@ print((MAX-MIN)/c+1)
 def problem1 (a,b,c):
     return (((b-(b%c))-(a-(a%c)+c))/c)+1
 
+     

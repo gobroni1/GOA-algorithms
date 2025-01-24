@@ -22,3 +22,34 @@ def decimal_to_binary (n):
     return "".join(bi[::-1])
 
 print(decimal_to_binary(26))
+
+def dec_to_hex(num):
+    ls = {
+        10: "A",
+        11: "B",
+        12: "C",
+        13: "D",
+        14: "E",
+        15: "F"
+    }
+    final_num = []
+    
+    left_num = num % 16
+    div_num = num // 16
+    
+    if num > 255:
+        return "Invalid decimal number"
+    
+    # მოვამზადოთ ათობითი ნაწილი
+    if div_num > 9:
+        final_num.append(ls[div_num])
+    elif div_num < 10:
+        final_num.append(str(div_num)) 
+    if left_num > 9:
+        final_num.append(ls[left_num])
+    elif left_num < 10:
+        final_num.append(str(left_num))  
+
+    return "".join(final_num)
+
+print(dec_to_hex(251))

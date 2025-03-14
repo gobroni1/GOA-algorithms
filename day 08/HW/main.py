@@ -149,3 +149,11 @@ X = []
 
 ## 52
 
+# A ⊂ C & B ⊂ D ⇒ (A × D) ∩ (B × C)
+
+A = [1, 2, 3]  
+B = [4, 5]  
+C = [1, 2, 3, 6, 7]  
+D = [4, 5, 8, 9]  
+
+# A is subset of C, B is subset of D
